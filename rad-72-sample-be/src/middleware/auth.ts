@@ -23,6 +23,10 @@ export const authenticate = (
 
   try {
     const payload = jwt.verify(token, JWT_SECRET)
+    //  {
+    //   sub: user._id.toString(),
+    //   roles: user.roles
+    // }
     req.user = payload
     next()
   } catch (err) {
