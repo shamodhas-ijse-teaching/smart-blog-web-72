@@ -1,18 +1,19 @@
 <h1>📝 Smart Blog Web Setup</h1>
 
-<p><strong>Repository link:</strong> <a href="https://github.com/shamodhas-ijse-teaching/smart-blog-web-72" target="_blank">Smart Blog Web</a></p>
+<p><strong>Repository link:</strong> 
+<a href="https://github.com/shamodhas-ijse-teaching/smart-blog-web-72" target="_blank">Smart Blog Web</a></p>
 
 <h2>📂 Project Structure</h2>
 
 <pre>
 smart-blog-web-72/
-├── frontend/    # React/Vite Frontend
-└── backend/     # Node/Express Backend
+├── rad-72-sample-fe    # React/Vite Frontend
+└── rad-72-sample-be    # Node/Express Backend
 </pre>
 
 <h2>⚡ Frontend (FE) Setup</h2>
 <ol>
-  <li>Open terminal in <code>frontend</code> folder.</li>
+  <li>Open terminal in <code>rad-72-sample-fe</code> folder.</li>
   <li>If <code>node_modules</code> folder is missing, run:
     <pre>npm install</pre>
   </li>
@@ -26,7 +27,7 @@ smart-blog-web-72/
 
 <h2>⚡ Backend (BE) Setup</h2>
 <ol>
-  <li>Open terminal in <code>backend</code> folder.</li>
+  <li>Open terminal in <code>rad-72-sample-be</code> folder.</li>
   <li>If <code>node_modules</code> folder is missing, run:
     <pre>npm install</pre>
   </li>
