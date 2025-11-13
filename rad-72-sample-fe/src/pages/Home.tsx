@@ -8,6 +8,7 @@ export default function Home() {
   const handleLogout = () => {
     setUser(null)
     localStorage.removeItem("accessToken")
+    localStorage.removeItem("refreshToken")
     navigate("/login")
   }
 
