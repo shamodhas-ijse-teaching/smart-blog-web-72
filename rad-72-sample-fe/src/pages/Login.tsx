@@ -23,6 +23,7 @@ export default function Login() {
 
       if (data?.data?.accessToken) {
         await localStorage.setItem("accessToken", data.data.accessToken)
+        await localStorage.setItem("refreshToken", data.data.refreshToken)
 
         const resData = await getMyDetails()
 

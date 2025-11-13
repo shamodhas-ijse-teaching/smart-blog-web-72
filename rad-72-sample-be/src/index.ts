@@ -34,7 +34,7 @@ app.get("/test-1", (req, res) => {})
 app.get("/test-2", authenticate, (req, res) => {})
 
 // admin only
-app.get("/test-3", authenticate, requireRole(Role.ADMIN), (req, res) => {})
+app.get("/test-3", authenticate, requireRole([Role.ADMIN]), (req, res) => {})
 
 mongoose
   .connect(MONGO_URI)

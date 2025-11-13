@@ -15,13 +15,19 @@ const router = Router()
 router.post(
   "/create",
   authenticate,
-  requireRole(Role.AUTHOR),
+  requireRole([Role.ADMIN, Role.AUTHOR]),
   upload.single("image"), // form data key name
   createPost
 )
 
 router.get("/", getAllPost)
 
-router.get("/me", authenticate, requireRole(Role.AUTHOR), getMyPost)
+// ADMIN, AUTHOR
+router.get(
+  "/me",
+  authenticate,
+  requireRole([Role.ADMIN, Role.AUTHOR]),
+  getMyPost
+)
 
 export default router

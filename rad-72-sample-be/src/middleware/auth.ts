@@ -31,7 +31,7 @@ export const authenticate = (
     next()
   } catch (err) {
     console.error(err)
-    res.status(403).json({
+    res.status(401).json({
       message: "Invalid or expire token"
     })
   }
